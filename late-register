@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>二信高中遲到登記系統</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>二信高中遲到登記系統</h1>
+    <p class="sub">請填寫班級、姓名、學號。登記時間會在送出時自動記錄。</p>
+
+    <form id="lateForm">
+      <label>班級（必填）
+        <input name="class" placeholder="例：二信電機二甲" required />
+      </label>
+
+      <label>姓名（必填）
+        <input name="name" placeholder="例：王小明" required />
+      </label>
+
+      <label>學號（必填）
+        <input name="studentId" placeholder="例：11208123" required />
+      </label>
+
+      <button id="submitBtn" type="submit">送出登記</button>
+      <p id="msg" class="msg" aria-live="polite"></p>
+    </form>
+
+    <footer class="footer">
+      <span id="time"></span>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
